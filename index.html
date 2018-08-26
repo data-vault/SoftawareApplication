@@ -19,35 +19,35 @@
 		<p>This page defines a set of extension values for use with <a href="https://schema.org/">schema.org</a>.</p>
 		<p>Each of these can be used as a value of the <a href="https://schema.org/applicationCategory">applicationCategory</a> property, or as a type.</p>
 
-		<h3>URLs</h3>
+		<h2>URLs</h2>
 		<p>Each of these has an URL which is: <strong>this document + # + code</strong></p>
 		<div><form>e.g. <input id="example_url" type="text" size="90" value="https://data-vault.github.io/SoftwareApplication/#EntertainmentApplication"></form></div>
 
-		<h3>Definitions</h3>
+		<h2>Definitions</h2>
 		<p><b>Status:</b> At this time we do not have full textual definitions for each code. Some example multi-lingual labels are shown, and no hierarchy is defined. 
 		This page serves primarily as a technical demonstration of one approach to documenting <a href="https://github.com/schemaorg/schemaorg/issues/284">schema.org extensions</a>.</p>
 
+		<section id="GameApplication" typeof="skos:Concept schema:Enumeration rdfs:Class" resource="#GameApplication">
+			<h3 property="name rdfs:label skos:prefLabel">GameApplication</h3>
+			<ul>
+				<li>en: <span property="rdfs:comment" lang="en">A gaming application.</span></li>
+				<li>ru: <span property="rdfs:comment" lang="ru">Игровое приложение.</span></li>
+				<li>hr: <span property="rdfs:comment" lang="hr">Aplikacija - Igra.</span></li>
+			</ul>
+		</section>
+		<section id="EntertainmentApplication" typeof="skos:Concept schema:Enumeration rdfs:Class" resource="#EntertainmentApplication">
+			<h3 property="name rdfs:label skos:prefLabel">EntertainmentApplication</h3>
+			<ul>
+				<li>en: <span property="rdfs:comment" lang="en">An entertainment application.</span></li>
+				<li>ru: <span property="rdfs:comment" lang="ru">Развлекательное приложение.</span></li>
+				<li>hr: <span property="rdfs:comment" lang="hr">Aplikacija za zabavu.</span></li>
+			</ul>
+		</section>
+		<section id="BusinessApplication" typeof="skos:Concept schema:Enumeration rdfs:Class" resource="#BusinessApplication">
+			<h3 property="name rdfs:label skos:prefLabel">BusinessApplication</h3>
+			<span property="rdfs:comment" lang="en">A business application.</span>
+		</section>
 		<ul>
-			<li id="#GameApplication" typeof="skos:Concept schema:Enumeration rdfs:Class" resource="#GameApplication">
-				<div property="name rdfs:label skos:prefLabel">GameApplication</div>
-				<ul>
-					<li>en: <span property="rdfs:comment" lang="en">A gaming application.</span></li>
-					<li>ru: <span property="rdfs:comment" lang="ru">Игровое приложение.</span></li>
-					<li>hr: <span property="rdfs:comment" lang="hr">Aplikacija - Igra.</span></li>
-				</ul>
-			</li>
-			<li id="#EntertainmentApplication" typeof="skos:Concept schema:Enumeration rdfs:Class" resource="#EntertainmentApplication">
-				<div property="name rdfs:label skos:prefLabel">EntertainmentApplication</div>
-				<ul>
-					<li>en: <span property="rdfs:comment" lang="en">An entertainment application.</span></li>
-					<li>ru: <span property="rdfs:comment" lang="ru">Развлекательное приложение.</span></li>
-					<li>hr: <span property="rdfs:comment" lang="hr">Aplikacija za zabavu.</span></li>
-				</ul>
-			</li>
-			<li id="#BusinessApplication" typeof="skos:Concept schema:Enumeration rdfs:Class" resource="#BusinessApplication">
-				<div property="name rdfs:label skos:prefLabel">BusinessApplication</div>
-				<span property="rdfs:comment" lang="en">A business application.</span>
-			</li>
 			<li id="#MultimediaApplication" typeof="skos:Concept schema:Enumeration rdfs:Class" resource="#MultimediaApplication">
 				<div property="name rdfs:label skos:prefLabel">MultimediaApplication</div>
 				<span property="rdfs:comment" lang="en">A multimedia application.</span>
@@ -112,7 +112,7 @@
 			</li>
 		</ul>
 
-		<h3>More Information</h3>
+		<h2>More Information</h2>
 		<p>Schema.org can be extended in various ways. This is an example of an external enumeration extension, in which a list of terms is defined externally to the project.
 		Other extension proposals lead to changes in schema.org itself, see the <a href="https://github.com/schemaorg/schemaorg/issues?q=is%3Aopen+is%3Aissue+label%3A%22schema.org+vocab%22">issue tracker</a>
 		for a list of proposals to change or extend schema.org vocabulary.</p>
@@ -128,7 +128,7 @@
 			<li>As a type, e.g. via additionalType property in Microdata, via @typeof in RDFa, @type in JSON-LD.</li>
 			<li>Some applications may understand the simple textual codes ("EntertainmentApplication" etc.) in place of their full URL equivalents.</li>
 			<li>Refer to supporting applications to understand which usage is most appropriate.</li>
-			<li>See also <a href="https://developers.google.com/webmasters/structured-data/testing-tool/?url=https://data-vault.github.io/SoftwareApplication/">structured data testing tool</a> 
+			<li>See also <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fdata-vault.github.io%2FSoftwareApplication%2F">structured data testing tool</a> 
 			and <a href="http://www.w3.org/2012/pyRdfa/extract?uri=http%3A%2F%2Fdata-vault.github.io%2FSoftwareApplication%2F&amp;format=turtle&amp;rdfagraph=output&amp;vocab_expansion=false&amp;rdfa_lite=false&amp;embedded_rdf=true&amp;space_preserve=true&amp;vocab_cache=true&amp;vocab_cache_report=false&amp;vocab_cache_refresh=false">W3C RDFa Distiller</a>  views of this extension.</li>
 		</ul>
 
